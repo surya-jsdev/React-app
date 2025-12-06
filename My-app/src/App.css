@@ -1,12 +1,32 @@
-body{
+body {
   height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.container{
+
+.container {
+  display: flex;
+  justify-content: center;
   width: 500px;
   height: 500px;
   background-color: rgba(4, 4, 4, 0.822);
   border-radius: 20px;
+}
+
+.inputfield h2 {
+  text-align: center;
+  color: red;
+}
+
+.container .inputfield input {
+  padding: 10px;
+  width: 250px;
+  border-radius: 10px;
+  border: none;
+}
+
+.inputfield button {
+  margin: 0 0 0 10px;
+  font-size: 0.9em;
 }
