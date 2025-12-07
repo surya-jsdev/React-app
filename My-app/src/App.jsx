@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react'
+import { useState } from 'react'
 import './App.css'
 
 function App() {
@@ -35,13 +35,12 @@ function App() {
           <input value={input} onChange={e => setInput(e.target.value)} type="text" placeholder="Enter movie name" />
           <button onClick={getdata}>Search</button>
           {Error && <p style={{ color: "red" }}>{Error}</p>}
-
           <div>
             {result && (<div className="movie-card">
               <h3>{result.Title}</h3>
               <img src={result.Poster} alt="Poster" />
-              <p><strong></strong> {result.Year}</p>
-              <p><strong></strong> {result.Plot}</p>
+              <p><strong>Year:</strong> {result.Year}</p>
+              <p><strong>Description:</strong>{result.Plot}</p>
             </div>)}
           </div>
         </div>
@@ -50,5 +49,4 @@ function App() {
 
   )
 }
-
 export default App
